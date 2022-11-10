@@ -2,6 +2,7 @@ button {
     background-color: red;
 }
 
+/*When user hovers on button change color*/
 button:hover {
     background-color: rgb(255, 108, 108);
 }
