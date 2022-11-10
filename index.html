@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript demo</title>
+    <!-- add the link tag to the style.css which will be in a folder -->
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <!-- used to embed client side script/JS -->
+    <script type="text/javascript">
+        //comment in JS
+        //add 3 examples of javascript
+        //function used for button
+        function alertUser() {
+            alert("You clicked the button")
+        }
+        //loop
+        var y;
+        for (y = 1; y <= 5; y++) { //start loop at 1, end at line 5, increase steps by 1
+            //code to run
+            // using `` allows us to type text and use ${} for variables. This way we don't have to use "+" and "," which can become tedious
+            document.write(`This is line: <strong>${y}</strong> number: ${y + 1} <br>`);
+        }
+
+        //if ..else if..  else statement	
+        var num;
+        num = parseInt(prompt("Enter a number", "1-10")); //turn input into integer
+
+        if (isNaN(num)) {
+            num = 5;
+        }
+
+        if ((num => 1) && (num <= 5)) {//if num greater than or equal to 1 AND num less than or equal to 5
+            console.log(num);
+            document.write(`Your number is ${num}, it is less than 6`);//
+        } else if ((num => 6) && (num <= 10)) {
+            console.log(num)
+            document.write(`Your number is ${num}, it is greater than 5`);
+        } else {
+            console.log(num);
+            document.write(`Your number is ${num}, it isn't within the range`);
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Graded lab exercise</h1>
+    <p>add 3 examples of javascript</p>
+    <p>create a repo in github and add your project when finished</p>
+    <p>post just the link to the github repo in OneNote</p>
+    <p>you link should look like this https://github/username/repoName.git </p>
+    <!--When user clicks button, run function named alertUser()-->
+    <button onclick="alertUser()">Click me!</button>
+    
+</body>
+
+</html>
